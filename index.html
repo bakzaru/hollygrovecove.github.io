@@ -1,82 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mermaid Tales from Hollygrove Cove</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f4f1ea;
+    color: #333;
+    line-height: 1.7;
+}
+
+.hero {
+    background: url("./images/Header.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.hero-content p {
+    margin-top: 15px;
+    font-size: 1.75rem;
+    font-style: italic;
+    text-shadow: 2px 2px 6px #000;
+}
+
+nav {
+    background-color: #2e5f57;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d8d0a7;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.content-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2e5f57;
+    border-bottom: 2px solid #d8d0a7;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #2e5f57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Mermaid Tales from Hollygrove Cove</h1>
+        <p>Stories, Memories, and Magic from Hollygrove Cove</p>
+    </div>
+</header>
+
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="/stories/about-the-cove.html">About the Cove</a>
+    <a href="/stories.html">Stories</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+</nav>
+
 <main>
 
     <section class="content-box">
 
-        <h2>Welcome to Mermaid Tales from Hollygrove Cove</h2>
+        <h2>Welcome to the Cove</h2>
 
         <p>
-            Mermaid Tales from Hollygrove Cove is a collection of stories,
-            photographs, memories, and magical moments inspired by the
-            merfolk, performers, volunteers, vendors, and guests who make
-            Hollygrove such a special place.
+            Welcome to Mermaid Tales from Hollygrove Cove, a collection of
+            stories, photographs, memories, and magical moments inspired by
+            the people who make Hollygrove such a special place.
         </p>
 
         <p>
-            Created by a former mermaid of the Cove, this site exists to
-            preserve the friendships, adventures, traditions, laughter,
-            and wonder experienced within Hollygrove Cove and throughout
-            the Michigan Renaissance Festival.
+            Through personal stories, festival memories, and glimpses behind
+            the scenes, this site hopes to preserve the wonder that keeps
+            visitors returning year after year.
         </p>
 
         <p>
-            Whether you are revisiting old memories, discovering the Cove
-            for the first time, or simply looking for a little magic in
-            your day, we invite you to explore the stories, meet the
-            merfolk, and become part of the adventure.
+            Whether you are revisiting old memories, discovering Hollygrove
+            for the first time, or simply enjoying a good story, we invite
+            you to wander the paths, meet the characters, and share in the magic.
         </p>
 
     </section>
 
     <section class="content-box">
 
-        <h2>About the Cove</h2>
+        <h2>About Laura</h2>
 
         <p>
-            Hollygrove Cove is home to the merfolk of the Michigan
-            Renaissance Festival, a gathering of talented performers
-            from many places who come together each season to create
-            unforgettable experiences for festival guests.
+            For years, Laura helped bring a little extra magic to Hollygrove
+            as one of the Cove's merfolk. Through stories, photographs, and
+            memories, she hopes to preserve the wonder that makes Hollygrove
+            such a special place for performers, volunteers, vendors, and guests.
         </p>
 
         <p>
-            Through storytelling, photographs, and cherished memories,
-            this site celebrates the people and traditions that have
-            made Hollygrove Cove a beloved destination for visitors
-            and cast members alike.
-        </p>
-
-        <p>
-            Stories/about-the-cove.html
-                Learn more about the merfolk of Hollygrove Cove →
-            </a>
+            Mermaid Tales from Hollygrove Cove is her way of sharing those
+            memories while celebrating the people who keep the spirit of
+            Hollygrove alive.
         </p>
 
     </section>
 
-    <section class="content-box">
+<section class="content-box">
 
-        <h2>Featured Story</h2>
+    <h2>Featured Story</h2>
 
-        images/meet-the-merfolk.jpg
+    <a href="/stories/about-the-cove.html">
+        /images/meet-the-merfolk.jpg
+    </a>
 
-        <h3>Meet the Merfolk of Hollygrove Cove</h3>
+    <h3>Meet the Merfolk of Hollygrove Cove</h3>
 
-        <p>
-            Meet the mermaids who bring magic, laughter, joy, and wonder
-            to Hollygrove Cove each season at the Michigan Renaissance Festival.
-        </p>
+    <p>
+        Meet the mermaids who bring magic, laughter, joy, and wonder
+        to Hollygrove Cove each season at the Michigan Renaissance Festival.
+    </p>
 
-        <p>
-            Learn why the Cove is more than a destination. It is a family,
-            a tradition, and a place many proudly call home.
-        </p>
+    <p>
+        Learn why the Cove is more than a destination. It is a family,
+        a tradition, and a place many proudly call home.
+    </p>
 
-        <p>
-            Stories/about-the-cove.html
-                Read the full story →
-            </a>
-        </p>
+    <p>
+        <a href="/stories/about-the-cove.html">
+            Read the full story →
+        </a>
+    </p>
 
-    </section>
+</section>
 
 </main>
+
+<footer>
+    <strong>Mermaid Tales from Hollygrove Cove</strong><br>
+    Stories, Memories, and Magic from Hollygrove Cove
+</footer>
+
+</body>
+</html>
