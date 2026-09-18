@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery - Mermaid Tales from Hollygrove Cove</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f4f1ea;
+    color: #333;
+}
+
+header {
+    background: url("./images/Header.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+}
+
+nav {
+    background-color: #2e5f57;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d8d0a7;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #2e5f57;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2e5f57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="/stories/about-the-cove.html">About the Cove</a>
+    <a href="/stories.html">Stories</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+</nav>
+
+<header>
+    <div class="header-content">
+        <h1>Gallery</h1>
+    </div>
+</header>
+
+<main>
+
+    <div class="gallery">
+
+        <a href="/stories/about-the-cove.html">
+
+            /images/meet-the-merfolk.jpg
+
+            <div class="caption">
+                Meet the Merfolk of Hollygrove Cove
+            </div>
+
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>
+        <a href="/index.html">← Return Home</a>
+    </p>
+
+    <strong>Mermaid Tales from Hollygrove Cove</strong><br>
+    Stories, Memories, and Magic from Hollygrove Cove
+
+</footer>
+
+</body>
+</html>
